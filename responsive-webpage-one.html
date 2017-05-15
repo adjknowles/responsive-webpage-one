@@ -1,0 +1,797 @@
+</div>
+<!-- close CMS .grid-default -->
+</div>
+<!-- close CMS .grid-row -->
+
+<link rel="stylesheet" href="/pws/client/style/quickview.css" />
+
+<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+<style type="text/css">
+/* 0.1 GLOBAL SETTINGS
+----------------------------- */
+/*Colour background override*/
+    
+.content>.content-wrap>.grid-container,.grid-container.custom-width {
+max-width:100%;
+padding:0
+}
+
+.content>.content-wrap,.content>.content-wrap>.grid-container>.grid-default {
+padding:0
+}
+
+@media screen and (max-width: 767px) {
+.content-wrap>.gift-cards {
+padding:0
+}
+}
+
+/*Hidden/Visible*/
+@media (min-width: 1200px) {
+.vs-lg{display:block!important}
+.hd-lg{display:none!important}
+}
+@media (max-width: 767px) {
+.hd-xs{display:none!important}
+.vs-xs{display:block!important}
+}
+@media (min-width: 768px) {
+.xs-only{display:none!important}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+.hd-sm{display:none!important}
+.vs-sm{display:block!important}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+.hd-md{display:none!important}
+.vs-md{display:block!important}
+}
+
+/* 0.3 COMPONENTS
+----------------------------- */
+
+h2.jet {
+color:#000
+}
+
+h2.milk {
+color:#fff
+}
+
+button.ghost {
+background:transparent;
+font-size:16px;
+line-height:16px;
+font-family:"FuturaPTMedium-Reg",sans-serif;
+font-weight:400!important;
+padding:10px;
+letter-spacing:2px;
+text-transform:uppercase;
+min-width:225px;
+text-align:center;
+margin:auto;
+outline:none
+}
+
+button.bg-solid {
+background:#eee2d1!important
+}
+
+@media screen and (min-width: 1921px) {
+button.ghost {
+font-size:21px;
+line-height:21px;
+min-width:340px;
+padding:20px
+}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+button.ghost {
+min-width:180px
+}
+}
+
+@media screen and (max-width: 767px) {
+button.ghost {
+display:block;
+line-height:36px;
+min-width:95%
+}
+}
+
+button.ghost-jet {
+color:#000;
+border:2px solid #000
+}
+
+button.ghost-milk {
+color:#fff;
+border:2px solid #fff
+}
+
+
+/* 0.3 TEMPLATE SETTINGS
+ ----------------------------- */
+
+.template_bloomsbury h2,h3,h4 {
+font-family:"FuturaPTBook-Reg",sans-serif;
+text-transform:none;
+margin:0;
+padding:0
+}
+
+.template_bloomsbury article {
+margin:75px 0
+}
+
+.template_bloomsbury article:nth-child(3), .template_bloomsbury article:nth-child(5), .template_bloomsbury article:nth-child(7) {
+margin:0 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .template_bloomsbury article {
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .template_bloomsbury article {
+        margin: 0;
+    }
+}
+
+/* 0.4 LAYOUT SETTINGS
+----------------------------- */
+
+.layer:after,.layer:before {
+content:" ";
+display:table
+}
+
+.layer:after {
+clear:both
+}
+
+.layer {
+margin-left:-11px;
+margin-right:-11px
+}
+
+.mob-btn-layer {
+margin-top:12.5px;
+margin-bottom:25px
+}
+
+.mob-combo-layer {
+margin-top:12.5px;
+margin-bottom:25px;
+margin-left:40px
+}
+
+.all-combo-layer {
+margin-top:12.5px;
+margin-bottom:25px;
+margin-left:0
+}
+
+.mob-combo-layer a,.all-combo-layer a {
+font-size:16px;
+text-decoration:underline
+}
+
+@media screen and (min-width: 1921px) {
+.mob-combo-layer a,.all-combo-layer a {
+font-size:22px
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+.mob-combo-layer a,.all-combo-layer a {
+font-size:17px
+}
+}
+
+.mob-btn-layer,.mob-combo-layer {
+float:left;
+padding:0 11px;
+width:100%
+}
+
+.beam {
+position:relative;
+min-height:1px
+}
+
+@media screen and (max-width: 768px) {
+.beam {
+padding-left:11px;
+padding-right:11px;
+/*Optional margin-botton - use as override*/
+margin-bottom:0
+}
+}
+
+@media screen and (max-width: 767px) {
+.beam {
+margin-bottom:50px
+}
+}
+
+/* ===============  
+Module Parent: Mod-header-suit
+ =============== */
+
+.mod-header-suit {}
+
+.mod-header {
+}
+
+.mod-header img {
+    width: 16.66666667%;
+    margin: auto;
+}
+
+.mod-header p {
+    font-size: 1.15vw;
+    line-height: 1.55vw;
+    text-align: center;
+    margin: auto;
+    width: 58%;
+}
+
+@media screen and (max-width: 1024px) {
+    .mod-header p {
+        font-size: 18px;
+        line-height: 25px;
+        width: 88%;
+        padding-top: 15px;
+    }
+    .mod-header img {
+        width: 19%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mod-header {}
+    .mod-header img {
+        width: 22%;
+    }
+}   
+
+@media screen and (max-width: 767px) {
+    .mod-header {
+        margin-top: 30px;
+    }
+    .mod-header img {
+        width: 50%;
+    }
+}
+
+/* ===============  
+Module Parent: Mod-suit-fit
+ =============== */
+
+.mod-suit-fit {}
+
+.mod-suit {
+    width: 54.16666667%;
+    float: left;
+    margin-left: 16.66666667%;
+}
+
+@media screen and (max-width: 768px) {
+    .mod-suit {
+        width: 100%;
+        margin-left: 0;
+    }
+}   
+
+@media screen and (max-width: 767px) {
+    .mod-suit {}
+}
+
+/* ===============  
+Module Child: Mod copy
+ =============== */
+
+.mod-suit-copy {
+    position: absolute;
+    bottom: 12%;
+    right: -41%;
+    width: 56%;
+}
+
+.mod-suit-copy h2 {
+    font-size: 1.74vw;
+    padding-bottom: 1.2vw;
+}
+.mod-suit-copy p {
+    font-size: 1.15vw;
+    line-height: 1.55vw;
+    padding-right: 22%;
+}
+
+@media screen and (max-width: 1024px) {
+    .mod-suit-copy {
+        width: 58%;
+    }
+    .mod-suit-copy h2 {
+        font-size: 24px;
+        line-height: 31px;
+        padding-bottom: 10px;
+    }
+    .mod-suit-copy p {
+        font-size: 18px;
+        line-height: 25px;
+        padding-right: 9%;
+    }
+}   
+
+@media screen and (max-width: 768px) {
+    .mod-suit-copy {
+        position: initial;
+        margin-left: 6%;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .mod-suit-copy h2 {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .mod-suit-copy p {
+        margin-bottom: 5px;
+
+    }
+}   
+
+@media screen and (max-width: 767px) {
+    .mod-suit-copy {
+        margin-left: 2%;
+    }
+    .mod-suit-copy h2 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+}
+
+/* ===============  
+Module Parent: Mod-four-components
+ =============== */
+
+.mod-four-components {}
+
+.mod-four {
+    width: 25%;
+    float: left;
+    padding: 0 10px 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .mod-four {
+        width: 50%;
+        padding: 10px 10px 10px 10px;
+    }
+}   
+
+@media screen and (max-width: 767px) {
+    .mod-four-carousel p {
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 20px;
+    }
+}
+
+/* ===============  
+Module Parent: Mod-suit-fit-2
+ =============== */
+
+.mod-suit-fit-2 {}
+
+.mod-suit-2 {
+    width: 54.16666667%;
+    float: left;
+    margin-left: 29.16666667%;
+}
+
+@media screen and (max-width: 768px) {
+    .mod-suit-2 {
+        width: 100%;
+        margin-left: 0;
+    }
+}   
+
+@media screen and (max-width: 767px) {
+    .mod-suit-2 {}
+}
+
+/* ===============  
+Module Child: Mod copy 2
+ =============== */
+
+.mod-suit-copy-2 {
+    position: absolute;
+    bottom: 12%;
+    left: -19%;
+    width: 44%;
+}
+
+.mod-suit-copy-2 h2 {
+    font-size: 1.74vw;
+    padding-bottom: 1.2vw;
+}
+.mod-suit-copy-2 p {
+    font-size: 1.15vw;
+    line-height: 1.55vw;
+    padding-right: 21%;
+}
+
+@media screen and (max-width: 1024px) {
+    .mod-suit-copy-2 {
+        left: -32%;
+        width: 58%;
+    }
+    .mod-suit-copy-2 h2 {
+        font-size: 24px;
+        line-height: 31px;
+        padding-bottom: 10px;
+    }
+    .mod-suit-copy-2 p {
+        font-size: 18px;
+        line-height: 25px;
+        padding-right: 9%;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .mod-suit-copy-2 {
+        position: initial;
+        margin-left: 6%;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .mod-suit-copy-2 h2 {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .mod-suit-copy-2 p {
+        margin-bottom: 5px;
+
+    }
+} 
+
+@media screen and (max-width: 767px) {
+    .mod-suit-copy-2 {
+        margin-left: 2%;
+        width: 94%;
+    }
+    .mod-suit-copy-2 h2 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+}
+
+
+.bx-pager, .bx-default-pager {
+    display: none;
+}
+
+.jslider .bx-wrapper .bx-prev {
+    background: url(/pws/client/images/bloomsbury/arrow-left-v2.png) no-repeat 0 -2px;
+}
+
+.jslider .bx-wrapper .bx-next {
+    background: url(/pws/client/images/bloomsbury/arrow-right-v2.png) no-repeat 10px -3px;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    top: 43%;
+}
+
+.click-container {
+    position: relative;
+    display: block;
+}
+
+.shop-now {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    padding-top: 0;
+    font-size: 3vw;
+    font-weight: normal;
+    color: #333333;
+    font-family: "FuturaPTBook-Reg", sans-serif!important;
+}
+
+.shop-sml {
+    padding-right: 5%;
+}
+
+.shop-lg {
+    padding-right: 2.5%;
+}
+
+@media (max-width: 768px) {
+    .shop-now {
+        font-size: 30px;
+    }
+}
+
+
+</style>
+
+<div class="template_bloomsbury">
+
+<!-- Header -->
+<article class="grid-container custom-width mod-header-suit">
+    <section class="layer">
+        <div class="beam mod-header">
+            <img src="/pws/client/images/bloomsbury/header-min.jpg" class="img-responsive">
+            <p>It's time to treat your suit like you do everything else in your wardrobe and get the most out of it. No longer just for special occasions, give it some airtime. Here are three ways to wear our <b>Bloomsbury suit</b> for Spring Summer.</p>
+        </div>
+    </section>
+</article>
+
+<!-- Look 1 -->
+<article class="grid-container custom-width mod-suit-fit">
+    <section class="layer">
+        <div class="beam mod-suit">
+            <img src="/pws/client/images/bloomsbury/look1-min.jpg" class="img-responsive">
+            <div class="mod-suit-copy">
+                <h2>Turning up to the formal events</h2>
+                <p>A crisp white shirt, with a patterned tie and a pair of leather Derby shoes to finish.</p>
+                <p class="styling-tip"><b>STYLING TIP:</b> The shirt cuffs should fall below the jacket cuffs.</p>
+            </div>
+        </div>
+    </section>
+</article>
+
+<!-- Look 1 Components -->
+<article class="grid-container custom-width mod-four-components">
+    <section class="layer">
+
+        <div class="beam mod-four click-container hd-xs">
+            <a href="/product/albion-washed-leather-derby-shoes/J32755_BK000" rel="quickview">
+                <span class="shop-now shop-sml">
+                +
+                </span>
+                <img src="/pws/client/images/bloomsbury/shoes-1-min.jpg" class="img-responsive">
+            </a>
+        </div>
+        <div class="beam mod-four click-container hd-xs">
+            <a href="/product/bloomsbury-italian-ottoman-slim-fit-suit-jacket/J32677_BL010" rel="quickview">
+                <span class="shop-now shop-sml">
+                +
+                </span>
+                <img src="/pws/client/images/bloomsbury/jacket-1-min.jpg" class="img-responsive">
+            </a>
+        </div>
+        <div class="beam mod-four click-container hd-xs">
+            <a href="/product/bloomsbury-italian-ottoman-slim-fit-suit-trousers/J32678_BL010" rel="quickview">
+                <span class="shop-now shop-sml">
+                +
+                </span>
+                <img src="/pws/client/images/bloomsbury/trousers-1-min.jpg" class="img-responsive">
+            </a>
+        </div>
+        <div class="beam mod-four click-container hd-xs">
+            <a href="/product/italian-poplin-slim-fit-shirt/J33224_WH000" rel="quickview">
+                <span class="shop-now shop-sml">
+                +
+                </span>
+                <img src="/pws/client/images/bloomsbury/shirt-1-min.jpg" class="img-responsive">
+            </a>
+        </div>
+
+        <div class="beam mod-four-carousel jslider hd-lg hd-md hd-sm vs-xs">
+            <div data-js-slider data-auto="false" data-controls="true" >
+                <div>
+                    <a href="/product/albion-washed-leather-derby-shoes/J32755_BK000">
+                        <img src="/pws/client/images/bloomsbury/shoes-1-min.jpg" class="img-responsive" />
+                        <p>Albion Washed Leather Derby Shoes<br><b>£149</b></p>
+                    </a>
+                </div>
+                <div>
+                    <a href="/product/bloomsbury-italian-ottoman-slim-fit-suit-jacket/J32677_BL010">
+                        <img src="/pws/client/images/bloomsbury/jacket-1-min.jpg" class="img-responsive" />
+                        <p>Bloomsbury Italian Ottoman Slim Fit Suit Jacket<br><b>£269</b></p>
+                    </a>
+                </div>  
+                <div>
+                    <a href="/product/bloomsbury-italian-ottoman-slim-fit-suit-trousers/J32678_BL010">
+                        <img src="/pws/client/images/bloomsbury/trousers-1-min.jpg" class="img-responsive" />
+                        <p>Bloomsbury Italian Ottoman Slim Fit Suit Trousers<br><b>£130</b></p>
+                    </a>
+                </div>
+                <div>
+                    <a href="/product/italian-poplin-slim-fit-shirt/J33224_WH000">
+                        <img src="/pws/client/images/bloomsbury/shirt-1-min.jpg" class="img-responsive" />
+                        <p>Italian Poplin Slim Fit Shirt<br><b>£79</b></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</article>
+
+<!-- Look 2 -->
+<article class="grid-container custom-width mod-suit-fit-2">
+    <section class="layer">
+        <div class="beam mod-suit-2">
+            <img src="/pws/client/images/bloomsbury/look2-min.jpg" class="img-responsive">
+            <div class="mod-suit-copy-2">
+                <h2>For everyday casual occasions</h2>
+                <p>Pare-back with a classic, cotton stripe T-shirt with short sleeves and finish with black leather trainers.</p>
+                <p class="styling-tip"><b>STYLING TIP:</b> Stand the collar to give the suit more of a relaxed feel.</p>
+            </div>
+        </div>
+    </section>
+</article>
+
+<!-- Look 2 Components -->
+<article class="grid-container custom-width mod-four-components">
+    <section class="layer">
+    
+        <div class="beam mod-four click-container hd-xs">
+            <a href="/product/campbell-grain-leather-trainer/J34348_BK000" rel="quickview">
+                <span class="shop-now shop-sml">
+                +
+                </span>
+                <img src="/pws/client/images/bloomsbury/shoes-2-min.jpg" class="img-responsive">
+            </a>
+        </div>
+        <div class="beam mod-four click-container hd-xs">
+            <a href="/product/bloomsbury-italian-ottoman-slim-fit-suit-jacket/J32677_BL010" rel="quickview">
+                <span class="shop-now shop-sml">
+                +
+                </span>
+                <img src="/pws/client/images/bloomsbury/jacket-2-min.jpg" class="img-responsive">
+            </a>
+        </div>
+        <div class="beam mod-four click-container hd-xs">
+            <a href="/product/bloomsbury-italian-ottoman-slim-fit-suit-trousers/J32678_BL010" rel="quickview">
+                <span class="shop-now shop-sml">
+                +
+                </span>
+                <img src="/pws/client/images/bloomsbury/trousers-1-min.jpg" class="img-responsive">
+            </a>
+        </div>
+        <div class="beam mod-four click-container hd-xs">
+            <a href="/product/melange-stripe-long-sleeve-breton/J32596_BL010" rel="quickview">
+                <span class="shop-now shop-sml">
+                +
+                </span>
+                <img src="/pws/client/images/bloomsbury/shirt-2-min.jpg" class="img-responsive">
+            </a>
+        </div>
+
+        <div class="beam mod-four-carousel jslider hd-lg hd-md hd-sm vs-xs">
+            <div data-js-slider data-auto="false" data-controls="true" >
+                <div>
+                    <a href="/product/campbell-grain-leather-trainer/J34348_BK000">
+                        <img src="/pws/client/images/bloomsbury/shoes-2-min.jpg" class="img-responsive" />
+                        <p>Campbell Grain Leather Trainer<br><b>£98</b></p>
+                    </a>
+                </div>
+                <div>
+                    <a href="/product/bloomsbury-italian-ottoman-slim-fit-suit-jacket/J32677_BL010">
+                        <img src="/pws/client/images/bloomsbury/jacket-2-min.jpg" class="img-responsive" />
+                        <p>Bloomsbury Italian Ottoman Slim Fit Suit Jacket<br><b>£269</b></p>
+                    </a>
+                </div>  
+                <div>
+                    <a href="/product/bloomsbury-italian-ottoman-slim-fit-suit-trousers/J32678_BL010">
+                        <img src="/pws/client/images/bloomsbury/trousers-1-min.jpg" class="img-responsive" />
+                        <p>Bloomsbury Italian Ottoman Slim Fit Suit Trousers<br><b>£130</b></p>
+                    </a>
+                </div>
+                <div>
+                    <a href="/product/melange-stripe-long-sleeve-breton/J32596_BL010">
+                        <img src="/pws/client/images/bloomsbury/shirt-2-min.jpg" class="img-responsive" />
+                        <p>Melange Stripe Long Sleeve Breton<br><b>£45</b></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</article>
+
+<!-- Look 3 -->
+<article class="grid-container custom-width mod-suit-fit">
+    <section class="layer">
+        <div class="beam mod-suit">
+            <img src="/pws/client/images/bloomsbury/look3-min.jpg" class="img-responsive">
+            <div class="mod-suit-copy">
+                <h2>When you're not sure on the dress code</h2>
+                <p>Wear a lightweight shirt with a grandad collar and brown leather trainers.</p>
+                <p class="styling-tip"><b>STYLING TIP:</b> Turn up the hem on the trousers, making sure they still sit below the ankle.</p>
+            </div>
+        </div>
+    </section>
+</article>
+
+<!-- Look 3 Components -->
+<article class="grid-container custom-width mod-four-components">
+    <section class="layer">
+    
+        <div class="beam mod-four click-container hd-xs">
+            <a href="/product/campbell-leather-trainers/J32756_BR002" rel="quickview">
+                <span class="shop-now shop-sml">
+                +
+                </span>
+                <img src="/pws/client/images/bloomsbury/shoes-3-min.jpg" class="img-responsive">
+            </a>
+        </div>
+        <div class="beam mod-four click-container hd-xs">
+            <a href="/product/bloomsbury-italian-ottoman-slim-fit-suit-jacket/J32677_BL010" rel="quickview">
+                <span class="shop-now shop-sml" style="color:#fff">
+                +
+                </span>
+                <img src="/pws/client/images/bloomsbury/jacket-3-min.jpg" class="img-responsive">
+            </a>
+        </div>
+        <div class="beam mod-four click-container hd-xs">
+            <a href="/product/bloomsbury-italian-ottoman-slim-fit-suit-trousers/J32678_BL010" rel="quickview">
+                <span class="shop-now shop-sml">
+                +
+                </span>
+                <img src="/pws/client/images/bloomsbury/trousers-1-min.jpg" class="img-responsive">
+            </a>
+        </div>
+        <div class="beam mod-four click-container hd-xs">
+            <a href="/product/cotton-seersucker-grandad-collar-shirt/J33069_WH000" rel="quickview">
+                <span class="shop-now shop-sml">
+                +
+                </span>
+                <img src="/pws/client/images/bloomsbury/shirt-3-min.jpg" class="img-responsive">
+            </a>
+        </div>
+
+        <div class="beam mod-four-carousel jslider hd-lg hd-md hd-sm vs-xs">
+            <div data-js-slider data-auto="false" data-controls="true" >
+                <div>
+                    <a href="/product/campbell-leather-trainers/J32756_BR002">
+                        <img src="/pws/client/images/bloomsbury/shoes-3-v2-min.jpg" class="img-responsive" />
+                        <p>Campbell Leather Trainers<br><b>£98</b></p>
+                    </a>
+                </div>
+                <div>
+                    <a href="/product/bloomsbury-italian-ottoman-slim-fit-suit-jacket/J32677_BL010">
+                        <img src="/pws/client/images/bloomsbury/jacket-3-v2-min.jpg" class="img-responsive" />
+                        <p>Bloomsbury Italian Ottoman Slim Fit Suit Jacket<br><b>£269</b></p>
+                    </a>
+                </div>  
+                <div>
+                    <a href="/product/bloomsbury-italian-ottoman-slim-fit-suit-trousers/J32678_BL010">
+                        <img src="/pws/client/images/bloomsbury/trousers-1-min.jpg" class="img-responsive" />
+                        <p>Bloomsbury Italian Ottoman Slim Fit Suit Trousers<br><b>£130</b></p>
+                    </a>
+                </div>
+                <div>
+                    <a href="/product/cotton-seersucker-grandad-collar-shirt/J33069_WH000">
+                        <img src="/pws/client/images/bloomsbury/shirt-3-min.jpg" class="img-responsive" />
+                        <p>Cotton Seersucker Grandad Collar Shirt<br><b>£85</b></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</article>
+
+</div>
+
+<script type="text/javascript" src="/pws/client/javascript/quickview.js"></script>
+
+<!-- see start of CMS -->
+<div>
+<!-- open blank div -->
+<div>
+<!-- open blank div -->
+<!-- open blank div -->
